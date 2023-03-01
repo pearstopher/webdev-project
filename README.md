@@ -7,7 +7,7 @@
 <i>Note: As mentioned in my project journal, this website was developed in my private webdev-homework repository
 alongside the class homework assignemnts. I copied the files here because I couldn't deploy GitHub
 Pages from a private repo. To examine my Git history and development commits beyond the intial commit in this
-repository, please refer to https://github.com/pearstopher/webdev-project/projects. Sorry for any inconvenience!</i>
+repository, please refer to https://github.com/pearstopher/webdev-homework/projects. Sorry for any inconvenience!</i>
 <br><br>
 
 
