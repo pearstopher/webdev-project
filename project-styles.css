@@ -289,7 +289,7 @@ If you would prefer, you can delete them and use your own classes and style decl
 
 .button-secondary {
     float: right;
-    color: green;
+    color: white;
     border: 1px solid green;
     background-color: green;
 }
@@ -309,6 +309,11 @@ If you would prefer, you can delete them and use your own classes and style decl
     overflow: hidden;
     padding-bottom: 30px;
 
+}
+
+.form #message {
+    padding-top: 20px;
+    text-align: center;
 }
 
 

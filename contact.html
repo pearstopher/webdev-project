@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CS463 Project | Contact</title>
     <link rel="stylesheet" href="project-styles.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous">
+    </script>
   </head>
   <body>
     <!-- Add your code here -->
@@ -28,7 +33,7 @@
       <section>
 
         <!-- based on the form located in hw1/03-form.html -->
-        <form action="" class="form">
+        <form action="" class="form" id="form">
           <h1>Contact Form</h1>
   
           <div class="spacing-bottom">
@@ -67,10 +72,30 @@
             <input class="button button-primary" type="submit" value="Submit">
             <input class="button button-secondary" type="reset" value="Reset">
           </div>
-  
+
+          <div id="message"></div>
   
   
         </form>
+        <!-- code for form submission -->
+        <script type="text/javascript">
+          $("#form").submit(function(event) {
+            submitForm();
+            event.preventDefault();
+          });
+  
+          function submitForm() {
+            formdata = $("#form").serialize();
+            $.get("https://pearstopher.com/webdev-project/index.php", data=formdata, function( data ) {
+              $( "#message").text("Form submitted successfully!")
+            })
+            .fail(function( data ) {
+              $("#message").text("Form submission error.")
+            });
+
+          }
+      
+        </script>
 
 
       </section>
