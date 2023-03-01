@@ -23,7 +23,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
 
-    background-color: var(--green);
     border: 0px;
     padding: 0px;
     margin: 0px;
@@ -278,21 +277,21 @@ If you would prefer, you can delete them and use your own classes and style decl
 
 .button-primary {
     float: left;
-    color: var(--white);
-    border: 1px solid var(--green);
-    background-color: var(--green);
+    color: white;
+    border: 1px solid green;
+    background-color: green;
 }
 
 .button-primary:hover {
-    color: var(--black);
-    background-color: var(--orange);
+    color: black;
+    background-color: orange;
 }
 
 .button-secondary {
     float: right;
-    color: var(--green);
-    border: 1px solid var(--green);
-    background-color: var(--white);
+    color: green;
+    border: 1px solid green;
+    background-color: green;
 }
 
 .button-secondary:hover {
