@@ -125,7 +125,8 @@ main {
 }
 
 /* flex: 1 makes the section take up the available space */
-section {
+section,
+#about-content {
   flex: 1;
 }
 
@@ -141,7 +142,8 @@ https://stackoverflow.com/questions/643879 */
 
 /* content, index/about */
 
-section {
+section,
+#about-content {
   padding: 20px;
 }
 
@@ -170,7 +172,8 @@ section {
 /* it's not specified but the photos in the assignment appear to show
     a maximum width and some padding around the edges of the page */
 
-section {
+section,
+#about-content {
   max-width: 800px;
   padding: 50px;
   margin: auto; /* the text is centered but the element also needs to be centered now */
