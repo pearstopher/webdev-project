@@ -124,7 +124,7 @@
 
             //validate username
             const username = $("#username").val();
-            if (!username.match("^[a-z0-9]+$")) {
+            if (!username.match("^[a-zA-Z0-9]{4,20}$")) {
               //this regex matches a string of 4 to 20 alphanumeric characters
               valid_form = false;
               $("#message").text(
