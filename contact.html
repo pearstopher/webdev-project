@@ -34,8 +34,8 @@
 
       <section>
         <!-- based on the form located in hw1/03-form.html -->
-        <form action="" class="form" id="form">
-          <h1>Contact Form</h1>
+        <form class="form" id="form">
+          <h3>Contact Form</h3>
 
           <div class="spacing-bottom">
             <label class="left-label" for="username">Username:</label>
@@ -111,7 +111,7 @@
           <div id="message"></div>
         </form>
         <!-- code for form submission -->
-        <script type="text/javascript">
+        <script>
           $("#form").submit(function (event) {
             submitForm();
             event.preventDefault();
