@@ -118,16 +118,64 @@
           });
 
           function submitForm() {
-            formdata = $("#form").serialize();
-            $.get(
-              "https://pearstopher.com/webdev-project/index.php",
-              (data = formdata),
-              function (data) {
-                $("#message").text("Form submitted successfully!");
-              }
-            ).fail(function (data) {
-              $("#message").text("Form submission error.");
-            });
+            //validate the form
+            //(I used https://www.regextester.com/ to test and refine my regexes)
+            let valid_form = true;
+
+            //validate username
+            const username = $("#username").val();
+            if (!username.match("^[a-z0-9]+$")) {
+              //this regex matches a string of 4 to 20 alphanumeric characters
+              valid_form = false;
+              $("#message").text(
+                "Your username must be between 4 and 20 alphanumeric characters."
+              );
+            }
+
+            //validate email
+            const email = $("#email").val();
+            if (valid_form && !email.match("^.+[@].+[.].+$")) {
+              //email addresses are confusing and I can't begin to imagine all of
+              //the rules what might make a valid email. This regex matches strings
+              //of the following pattern: "[anything]@[anything].[anything]"
+              valid_form = false;
+              $("#message").text("Invalid email.");
+            }
+
+            //validate password
+            const password = $("#password").val();
+            if (
+              valid_form &&
+              !password.match(
+                "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{6,100}$"
+              )
+            ) {
+              //this regex requires that your password be between 6 to 100 characters.
+              //also it uses lookahead to make sure that you have at least:
+              // - one lowercase character
+              // - one uppercase character
+              // - one number
+              // - one special character (anything non-alphanumeric)
+              valid_form = false;
+              $("#message").text(
+                "Invalid password. You must have one uppercase character, one lowercase character, \
+                one number, and one special character."
+              );
+            }
+
+            //submit the form data
+            if (valid_form) {
+              const formdata = $("#form").serialize();
+              $.get(
+                "https://pearstopher.com/webdev-project/index.php",
+                (data = formdata),
+                function (data) {
+                  $("#message").text("Form submitted successfully!");
+                }
+              ).fail(function (data) {
+                $("#message").text("Form submission error.");
+              });
+            }
           }
         </script>
       </section>
