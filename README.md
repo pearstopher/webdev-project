@@ -10,12 +10,10 @@ Pages from a private repo. To examine my Git history and development commits bey
 repository, please refer to https://github.com/pearstopher/webdev-homework/tree/main/project. Sorry for any inconvenience!</i>
 <br><br>
 
-
 <h2>Instructions</h2>
 Create a project Readme.md file with information about the project, how to run
 the code, any outside sources used, and where the site is deployed.
 <br><br>
-
 
 <h2>Project Information</h2>
 
@@ -24,14 +22,12 @@ describe myself and to showcase some of my personal achievements in a profession
 using HTML, CSS, and Javascript/Jquery.
 <br><br>
 
-
 <h2>Running the Code</h2>
 
 In order to run the code, you simply need to open it in a web browser (Google Chrome, Microsoft Edge, Mozilla Firefox,
 etc). After downloading the code, simply right click on the index.html file (or any of the html files) and then select
 the web browser of your choice.
 <br><br>
-
 
 <h2>Outside Resources</h2>
 
@@ -46,8 +42,8 @@ Javascript/Jquery
 CSS
 
 1. https://developer.mozilla.org/en-US/docs/Web/CSS, specifically:
-    1. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
-    2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+   1. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+   2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 
 HTML
 
@@ -55,7 +51,6 @@ HTML
 
 Thankfully almost all of the information that I needed was present directly in the class lectures and slides!
 <br><br>
-
 
 <h2>Site Location</h2>
 
